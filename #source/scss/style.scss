@@ -1,0 +1,140 @@
+@import 'nullcss.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+$mw: 650px;
+
+body{
+	background-color: #d87a7a;
+}
+
+.wrapper {
+	max-width: $mw;
+	height: 800px;
+	font-family: 'Permanent Marker';
+	font-size: 18px;
+	border: 2px dashed rgb(232, 232, 123);
+	margin: 50px auto;
+	padding: 20px;
+}
+
+.header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	font-size: 24px;
+}
+.event {
+	margin: 0 150px 0 0;
+	
+
+		&__date {
+
+		}
+		&__time {
+			padding-top: 10px;
+		}
+}
+.special-guest {
+	max-width: 180px;
+	text-align: center;
+	line-height: 20px;
+}
+
+
+.skulls-animation {
+
+	background-image: url('../img/animation/skull.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+
+		&__top {
+			height: 50px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			margin: 0 0 30px 0;
+		}
+
+		&__bottom {
+			height: 50px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			margin: 20px 0 20px 0;
+		}
+}
+.content{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 auto;
+}
+.band {
+		&__logo {
+			height: 100px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			padding-bottom: 50px 0 0 0;
+			&_c{
+				height: 80px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+			}
+		}
+
+		&__name {
+			font-family: "Fascinate";
+			font-size: 30px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		&__description {
+			text-align: justify;
+			max-width: 170px;
+		}
+}
+.poster {
+	height: 300px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 30px 0 30px;
+	border: 3px solid rgb(171, 0, 0);
+}
+.more-info {
+	padding: 20px 0 0 0;
+		&__concert-details {
+			max-width: 400px;
+			margin: 0 auto;
+			text-align: center;
+			span{
+				font-weight: 700;
+				color: rgb(2, 6, 255);
+			}
+			line-height: 20px;
+		}
+
+		&__pre-order-button {
+			margin: 0 auto;
+			width: 100%;
+			display: block;
+		}
+
+		&__footer {
+			font-size: 12px;
+			margin: 0 auto;
+			width: 100%;
+			display: block;
+		}
+}
